@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10rem;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 1px 171px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 66px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(15px);
+    color: #FFF;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.state {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.tickVert {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    fill: #00FF49;
+}
+
+.tickRouge {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    fill: #F00;
+}
+
+.etat {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 5rem;
+        background: url("../images/telephone/palworld-zoe-rayne.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .btn {
+        padding: 1px 50px;
+        font-size: 48px;
+    }
+
+    .state {
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .tickVert, .tickRouge {
+        width: 16px;
+        height: 16px;
+    }
+
+    .etat {
+        font-size: 16px;
+    }
+
+}
